@@ -21,6 +21,6 @@ $container['logger'] = function ($c) {
 
 // monolog
 $container['listNumber'] = function ($c) {
-    $listNumber = new ListNumber(150);
+    $listNumber = new ListNumber(100);
     return $listNumber;
 };

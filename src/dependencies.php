@@ -19,7 +19,7 @@ $container['logger'] = function ($c) {
 };
 
 
-// monolog
+// ListNumber
 $container['listNumber'] = function ($c) {
     $listNumber = new ListNumber(100);
     return $listNumber;

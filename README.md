@@ -11,21 +11,22 @@ This skeleton application was built for Composer. This makes setting up a new Sl
 
 Run this command from the directory in which you want to install your new Slim Framework application.
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+    git clone https://github.com/darkclaw/DemoChallengListNumber.git
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+After, run this command
+    
+    cd DemoChallengListNumber/
+    
+Run this command from the directory for update project
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+    php composer.phar update 
+ 
 
-To run the application in development, you can run these commands 
-
-	cd [my-app-name]
-	php composer.phar start
-
-Run this command in the application directory to run the test suite
-
-	php composer.phar test
-
-That's it! Now go build something cool.
+Run the following command in terminal to start localhost web server, assuming ./public/ is public-accessible directory with index.php file:
+    
+    php -S localhost:8888 -t public public/index.php
+    
+    
+    
+That's it! 
 
